@@ -8,26 +8,28 @@
 </head>
 <body>
     <div class="container marketing my-5 p-5 bg-white rounded shadow-sm text-center">
-        <!-- EMAIL LOGIN-->
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">EMAIL</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com.br">
-        </div>
-        <!-- FINAL - EMAIL LOGIN-->
-        
-        <!-- SENHA LOGIN-->
-        <label for="inputPassword5" class="form-label">SENHA</label>
-        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-        <div id="passwordHelpBlock" class="form-text">
-            Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços ou emoji.
-        </div>
-        <!-- FINAL - SENHA LOGIN-->
+        <form action="transmitir.php" method="POST" class="formLogin">
+            <!-- EMAIL LOGIN-->
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com.br" name="email">
+            </div>
+            <!-- FINAL - EMAIL LOGIN-->
+            
+            <!-- SENHA LOGIN-->
+            <label for="inputPassword5" class="form-label">SENHA</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            <div id="passwordHelpBlock" class="form-text">
+                Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços ou emoji.
+            </div>
+            <!-- FINAL - SENHA LOGIN-->
 
-        <!-- BOTÃO LOGIN-->
-        <div>
-            <button type="button" class="btn btn-primary">LOGIN</button>
-        </div>
-        <!-- FINAL - BOTÃO LOGIN-->
+            <!-- BOTÃO LOGIN-->
+            <div>
+                <input type="submit" value="LOGIN" class="btn btn-success" />
+            </div>
+            <!-- FINAL - BOTÃO LOGIN-->
+        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
